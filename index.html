@@ -11,11 +11,7 @@
     <meta property="og:url" content="https://roygalan340.github.io/minimuestrario/">
     <meta property="og:title" content="PRECIO DE SELLOS - Catálogo Roy García">
     <meta property="og:description" content="Catálogo Oficial de Productos Roy García. ¡Toca para ver precios y hacer tu pedido por WhatsApp!">
-    <meta property="og:image" content="https://roygalan340.github.io/minimuestrario/https://i.ibb.co/Y7Pv3r4v/logo-roy-garcia-otro.png">
-    <meta property="og:image:secure_url" content="https://i.ibb.co/Y7Pv3r4v/logo-roy-garcia-otro.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
+    <meta property="og:image" content="https://i.ibb.co/Y7Pv3r4v/logo-roy-garcia-otro.png">
 
     <style>
         :root {
@@ -27,7 +23,11 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--azul);
+            background-image: url('https://i.ibb.co/9kx6vPz2/image-0877e9.jpg');
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
             margin: 0;
             padding: 0;
             display: flex;
@@ -102,6 +102,7 @@
             flex-direction: column;
             gap: 20px;
             margin-bottom: 30px;
+            margin-top: 10px;
         }
 
         /* Tarjeta-Botón */
@@ -109,7 +110,7 @@
             background: #ffffff;
             border-radius: 22px;
             overflow: hidden;
-            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
             display: flex;
             flex-direction: column;
             text-decoration: none;
@@ -119,7 +120,7 @@
         }
 
         .marco-rojo { border: 4px solid var(--rojo); }
-        .marco-blanco { border: 4px solid #ffffff; }
+        .marco-azul { border: 4px solid var(--azul); }
 
         .card-boton:active {
             transform: scale(0.96);
@@ -216,13 +217,9 @@
             margin-left: 2px;
         }
 
-        /* Pie de página */
-        .footer {
-            margin-top: 10px;
-            text-align: center;
-            font-size: 13px;
-            color: rgba(255, 255, 255, 0.7);
-            font-weight: bold;
+        .espacio-final {
+            height: 120px;
+            width: 100%;
         }
     </style>
 </head>
@@ -255,7 +252,7 @@
             </div>
         </a>
 
-        <a href="whatsapp://send?phone=59169240891&text=Hola%20Roy%20Garc%C3%ADa,%20quiero%20el%20Modelo%2002:%20Sello%20Autom%C3%A1tico%20Shiny%20S-842%20(80%20Bs.)" class="card-boton marco-blanco">
+        <a href="whatsapp://send?phone=59169240891&text=Hola%20Roy%20Garc%C3%ADa,%20quiero%20el%20Modelo%2002:%20Sello%20Autom%C3%A1tico%20Shiny%20S-842%20(80%20Bs.)" class="card-boton marco-azul">
             <div class="badge-numero">Modelo 02</div>
             <div class="imagen-wrapper">
                 <img src="https://i.ibb.co/wFnQp378/image.png" alt="Sello Shiny">
@@ -285,10 +282,8 @@
             </div>
         </a>
 
-    </div>
+        <div class="espacio-final"></div>
 
-    <div class="footer">
-        roygarcia • Tu marca de confianza
     </div>
 
 </body>
